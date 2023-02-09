@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute-page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <section class="navbar">
+        <div class="logo">
+            <svg width="76" height="76" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.298 2.41c-.04-.046-1.51.018-2.79 1.406s-1.082 2.979-1.054 3.02c.03.04 1.824.104 2.97-1.51 1.146-1.614.915-2.87.874-2.916Zm3.977 14.08c-.058-.116-2.79-1.481-2.536-4.107.255-2.627 2.01-3.347 2.038-3.425.027-.078-.717-.948-1.505-1.388a4.43 4.43 0 0 0-1.876-.52c-.13-.004-.58-.115-1.504.138-.61.167-1.984.707-2.362.729-.38.021-1.507-.627-2.72-.798-.777-.15-1.6.157-2.19.393-.587.236-1.706.905-2.488 2.685-.782 1.778-.373 4.596-.08 5.472.292.875.75 2.309 1.527 3.355.691 1.18 1.608 2 1.991 2.279.383.278 1.463.463 2.212.08.602-.37 1.69-.582 2.119-.566.428.015 1.273.185 2.138.647.685.236 1.333.138 1.982-.126.65-.266 1.59-1.271 2.686-3.31.417-.948.606-1.46.568-1.538Z"></path>
+                <path d="M16.298 2.41c-.04-.046-1.51.018-2.79 1.406s-1.082 2.979-1.054 3.02c.03.04 1.824.104 2.97-1.51 1.146-1.614.915-2.87.874-2.916Zm3.977 14.08c-.058-.116-2.79-1.481-2.536-4.107.255-2.627 2.01-3.347 2.038-3.425.027-.078-.717-.948-1.505-1.388a4.43 4.43 0 0 0-1.876-.52c-.13-.004-.58-.115-1.504.138-.61.167-1.984.707-2.362.729-.38.021-1.507-.627-2.72-.798-.777-.15-1.6.157-2.19.393-.587.236-1.706.905-2.488 2.685-.782 1.778-.373 4.596-.08 5.472.292.875.75 2.309 1.527 3.355.691 1.18 1.608 2 1.991 2.279.383.278 1.463.463 2.212.08.602-.37 1.69-.582 2.119-.566.428.015 1.273.185 2.138.647.685.236 1.333.138 1.982-.126.65-.266 1.59-1.271 2.686-3.31.417-.948.606-1.46.568-1.538Z"></path>
+              </svg>
+        </div>
+        <input type="checkbox" id="nav_check" hidden>
+        <div class="menu">
+            <div class="logo_check">
+                <svg width="76" height="76" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.298 2.41c-.04-.046-1.51.018-2.79 1.406s-1.082 2.979-1.054 3.02c.03.04 1.824.104 2.97-1.51 1.146-1.614.915-2.87.874-2.916Zm3.977 14.08c-.058-.116-2.79-1.481-2.536-4.107.255-2.627 2.01-3.347 2.038-3.425.027-.078-.717-.948-1.505-1.388a4.43 4.43 0 0 0-1.876-.52c-.13-.004-.58-.115-1.504.138-.61.167-1.984.707-2.362.729-.38.021-1.507-.627-2.72-.798-.777-.15-1.6.157-2.19.393-.587.236-1.706.905-2.488 2.685-.782 1.778-.373 4.596-.08 5.472.292.875.75 2.309 1.527 3.355.691 1.18 1.608 2 1.991 2.279.383.278 1.463.463 2.212.08.602-.37 1.69-.582 2.119-.566.428.015 1.273.185 2.138.647.685.236 1.333.138 1.982-.126.65-.266 1.59-1.271 2.686-3.31.417-.948.606-1.46.568-1.538Z"></path>
+                    <path d="M16.298 2.41c-.04-.046-1.51.018-2.79 1.406s-1.082 2.979-1.054 3.02c.03.04 1.824.104 2.97-1.51 1.146-1.614.915-2.87.874-2.916Zm3.977 14.08c-.058-.116-2.79-1.481-2.536-4.107.255-2.627 2.01-3.347 2.038-3.425.027-.078-.717-.948-1.505-1.388a4.43 4.43 0 0 0-1.876-.52c-.13-.004-.58-.115-1.504.138-.61.167-1.984.707-2.362.729-.38.021-1.507-.627-2.72-.798-.777-.15-1.6.157-2.19.393-.587.236-1.706.905-2.488 2.685-.782 1.778-.373 4.596-.08 5.472.292.875.75 2.309 1.527 3.355.691 1.18 1.608 2 1.991 2.279.383.278 1.463.463 2.212.08.602-.37 1.69-.582 2.119-.566.428.015 1.273.185 2.138.647.685.236 1.333.138 1.982-.126.65-.266 1.59-1.271 2.686-3.31.417-.948.606-1.46.568-1.538Z"></path>
+                  </svg>
+            </div>
+            <ul class="list">
+                <li><a href="#Home"> Home </a></li>
+                <li><a href="#life's work"> Life's Work </a></li>
+                <li><a href="#timeline"> timeline</a></li>
+                <li><a href="#contact"> contacts </a></li>
+            </ul>
+        </div>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </section>
+    <section id="Home" class="welcome">
+        <main>
+        <div class="main">
+            <h4>The Life of</h4>
+            <h1>Steven Paul Jobs</h1>
+        </div>
+        <img src="images/image.jfif" alt="picture of steve jobs" class="sto">
+    </main>
+   </section>
+    <section id="life's work" class="work">
+        <div class="paragraph">
+            <h2 id="heading">
+                One of the most significant business leaders <br> in the IT industry was Steve Jobs.
+            </h2>
+            <p>One of the largest IT firms in the world, Apple Inc., was founded by him,<br> and he served as its CEO. The modern IT world honors his concepts and drive for creative <br> By giving us the Mac, iPhone, and iPad, his vision and passion permanently revolutionized. <br> He accomplished a lot at a young age and served as an inspiration for a whole generation <br> of aspiring businesspeople. He is revered on a global scale as a success hero and role model. <br> Anyone with a passion for IT innovation or entrepreneurship can find inspiration in his life.</p> 
+        </div>
+        <div class="paragraph">
+            <h2 id="legacy">
+                HIS LEGACY
+            </h2>
+            <p>
+                Apple's computers, accessories, mobile devices,  and other IT goods <br> are now sold, utilized, and adored by users all over the world. About the <br> life of Steve Jobs, a lot of books have been published  and movies  have been  made. <br> His quotations are very inspiring and have been utilized intermittently for a <br> variety of objectives by people and companies all across the world. He will always be <br> recognized for  the great contribution he made to the IT community and the wider globe.
+
+            </p>
+        </div>
+    </section>
+    <section id="timeline" class="time">
+        <h2 id="timeline-hold">
+            TIMELINE
+        </h2>
+        <ul>
+            <dt>Feb 1995: </dt>
+            <dd>Steven Paul Jobs is born in San Francisco to Joanne Carole Schieble <br> and Abdulfattah Jandali. The then-unmarried couple give up their son to adoption. <br> Paul and Clara Jobs become Jobs' non-biological parents.</dd>
+            <dt>1961: </dt>
+            <dd>The Jobs family moves to Mountain View, Calif., part of what <br> would later become known as Silicon Valley.</dd>
+            <dt>1968: </dt>
+            <dd>Jobs calls Bill Hewlett, the co-founder and co-namesake of Hewlett-Packard, <br> looking for spare parts to build a frequency counter. <br> Hewlett gives Jobs the parts, as well as an internship with the company that summer.</dd>
+            <dt>1970:</dt>
+            <dd>Meets future Apple co-founder Steve Wozniak through a friend. In Wozniak's <br> 2006 autobiography, "iWoz," he notes that the two "hit it off" immediately, <br> despite their four-year age difference</dd>
+            <dt>1972: </dt>
+            <dd>Graduates from Homestead High School in Cupertino, Calif., and enrolls at <br> Reed College in Portland, Ore., only to drop out a semester later. Jobs <br> would go on to sit in on classes that interested him, such as calligraphy, <br> despite not getting credit for them.</dd>
+            <dt>1974: </dt>
+            <dd>Begins a brief stint as an engineer at Atari. Working the night shift, <br> he employs Wozniak to help whittle down the hardware required for a prototype <br> of a single-player version of Pong, the game that would go on to become Breakout. Jobs leaves <br> Atari in the summer to travel through India, only to return to California to live in a commune</dd>
+            <dt>1976: </dt>
+            <dd>Co-founds Apple Computer with Wozniak and Ronald Wayne. That same year, <br> the company sells the Apple I in the form of a kit that sells for $666.66.</dd>
+            <dt>1977: </dt>
+            <dd>Releases the Apple II, the first commercially available personal computer <br> in a plastic case with color graphics--and Apple's first successful personal computer.</dd>
+            <dt>November 29, 1995: </dt>
+            <dd>Becomes Pixar's president and CEO. Later in the year, Jobs brings Pixar public, one week <br> after the release of "Toy Story," with Tom Hanks doing the  voice of Woody and Tim Allen <br> as Buzz Lightyear. The film earns $192 million at the box office. Its success helps make <br> it quite attractive for celebrities to lend their voices to animated characters.</dd>
+            <dt>November 10, 1997: </dt>
+            <dd>Introduces the Apple Store, which lets consumers custom-order Apple products directly from <br> the company online.</dd>
+            <dt>January 9, 2001: </dt>
+            <dd>Introduces iTunes, then exclusively for Mac users. "iTunes is miles ahead of every other jukebox <br> application, and we hope its dramatically simpler user interface will bring even more people into <br> the digital music revolution."</dd>
+            <dt>May 19, 2001: </dt>
+            <dd>Opens Apple's first retail stores in Tysons Corner, Va., and Glendale, Calif. The store designs <br> and personal sales methods proved to be tremendously popular. Apple was running 330 stores worldwide <br> as of July 2011.</dd>
+            <dt>October 23, 2001: </dt>
+            <dd>Introduces the iPod:
+                "With iPod, Apple has invented a whole new category of digital music player that lets <br> you put your entire music collection in your pocket and listen to it wherever <br> you go...With iPod, listening to music will never be the same again." Apple's shipped more than <br> 300 million iPods as of October 2011.</dd>
+                <dt>Aug 2011: </dt>
+                <dd>Steve Jobs resigns as CEO of Apple, with the words 'I have always said if there ever <br> came a day when I could no longer meet my duties and expectations as Apple's CEO, I would be <br> the first to let you know. Unfortunately, that day has come.' Tim Cook becomes Apple CEO.</dd>
+                <dt>Oct 2011: </dt>               
+                <dd>Steve Jobs dies at home, surrounded by his family.</dd>
+                </dl>
+    </section>
+    <section id="contact" class="footer">
+
+    </section>
+</body>
+</html>
