@@ -240,9 +240,9 @@ dd{
     .sto{
         width: 30vw;
         height: 60vh;
-        object-fit: fill;
+        object-fit:fill;
         margin-right: 70px;
-        margin-top: 60px;
+        margin-top: 90px;
     }
     .main h4{
         font-size: 26px;
